@@ -31,6 +31,7 @@ def string_fitness(string_individual):
     fitness = 0
 
     for ipos in range(0, len(TARGET_STRING)):
+        print (ipos)
         fitness += abs(ord(string_individual[ipos]) -
                        ord(TARGET_STRING[ipos]))
 
