@@ -31,7 +31,6 @@ def string_fitness(string_individual):
     fitness = 0
 
     for ipos in range(0, len(TARGET_STRING)-1):
-        print (ipos)
         fitness += abs(ord(string_individual[ipos]) -
                        ord(TARGET_STRING[ipos]))
 
@@ -116,7 +115,7 @@ if __name__ == '__main__':
 
     args = get_args()
 
-    genetic_optimizer(args.init_population_size, args.elite_percentage,
+    string_pp = genetic_optimizer(args.init_population_size, args.elite_percentage,
                       args.max_iteration, args.mutation_percentage)
 
-    
+    print (string_pp)
