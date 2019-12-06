@@ -115,7 +115,7 @@ if __name__ == '__main__':
 
     args = get_args()
 
-    genetic_optimizer(args.init_population_size, args.elit_percentage,
+    genetic_optimizer(args.init_population_size, args.elite_percentage,
                       args.max_iteration, args.mutation_percentage)
 
     
