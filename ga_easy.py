@@ -57,7 +57,7 @@ def crossover(p1_string, p2_string):
 def genetic_optimizer(init_population, elit_percent, max_iteration,
                       mutation_probability):
 
-    initialized_population = initialized_population(init_population)
+    initialized_population = initialize_population(init_population)
     original_population_size = len(initialized_population)
     
     top_elite = int(elit_percent*original_population_size)
